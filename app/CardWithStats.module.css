@@ -1,65 +1,43 @@
-
-
 .cardContainer {
+  margin: 20px; 
+  
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: var(--mantine-spacing-md);
- 
+  grid-template-columns: repeat(auto-fill, minmax(355px, 1fr)); 
+  gap: 14px; 
 }
 
-.card {
-  background-color: var(--mantine-color-body);
-  border-radius: var(--mantine-radius-md);
-  overflow: hidden;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--mantine-spacing-sm) var(--mantine-spacing-lg);
-  border-top: rem(1px) solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
-}
-
-.title {
-  font-family: Greycliff CF, var(--mantine-font-family);
-  line-height: 1;
-}
-
-.image {
-  max-width: 10px;
-  max-height: 80px;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.cardContainer {
-  margin: 25px;
-  display: grid;
-  gap: var(--mantine-spacing-md);
-}
 .customCardSize {
-  width: 100%;
-  height: 310px; 
-
+  padding: 8px;
+  width: 100%; 
+  max-width: 315px; 
+  height: 316px; 
 }
+
+.largerAvatar {
+  width: 110px; 
+  height: 110px; 
+}
+
 .card {
   background-color: var(--mantine-color-body);
   border-radius: var(--mantine-radius-md);
   overflow: hidden;
 }
-
 
 .cardContainer > .card > div {
   margin-top: var(--mantine-spacing-sm);
 }
 
 
-.button-container > div {
-  width: 150px;
+.customButton {
+  width: 120px;
   display: flex;
-  gap: var(--mantine-spacing-sm); 
+  align-items: center;
+  justify-content: center;
+  font-size: 10px; /* Decreased font size */
 }
+
+
 
 @media (min-width: 950px) {
   .cardContainer {
